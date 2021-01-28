@@ -6,7 +6,16 @@
     <remote name="linaro" fetch="http://git.linaro.org" review=""/>
     <remote name="yocto" fetch="http://git.yoctoproject.org/git" review=""/>
     <default remote="cmf" revision="master" sync-j="2"/>
-    <include name="oe-layers.xml"/>
+    <project name="rdk/components/opensource/oe/bitbake" path="openembedded-core/bitbake" revision="rdk/morty"/>
+    <project name="rdk/components/opensource/oe/meta-browser" path="meta-browser" revision="rdk/morty"/>
+    <project name="rdk/components/opensource/oe/meta-java" path="meta-java" revision="rdk/morty"/>
+    <project name="rdk/components/opensource/oe/meta-jz-mips" path="meta-jz-mips" revision="rdk/morty"/>
+    <project name="rdk/components/opensource/oe/meta-openembedded" path="meta-openembedded" revision="rdk/morty"/>
+    <project name="rdk/components/opensource/oe/meta-qt5" path="meta-qt5" revision="rdk/morty"/>
+    <project name="rdk/components/opensource/oe/meta-raspberrypi" path="meta-raspberrypi" revision="rdk/morty"/>
+    <project name="rdk/components/opensource/oe/meta-rtlwifi" path="meta-rtlwifi" revision="rdk/morty"/>
+    <project name="rdk/components/opensource/oe/meta-virtualization" path="meta-virtualization" revision="rdk/morty"/>
+    <project name="rdk/components/opensource/oe/openembedded-core" path="openembedded-core" revision="rdk/morty"/>
     <project name="WebPlatformForEmbedded/meta-wpe" remote="github" path="meta-wpe" revision="morty" upstream="morty"/>
     <project name="components/asp/rdk-oe/meta-cmf-bsp-emulator" path="meta-cmf-bsp-emulator" revision="rdk-next"/>
     <project name="components/asp/rdk-oe/meta-rdk-bsp-emulator" path="meta-rdk-bsp-emulator" revision="rdk-next"/>
