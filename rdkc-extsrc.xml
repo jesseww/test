@@ -5,47 +5,106 @@
     <remote name="github" fetch="https://github.com" review=""/>
     <remote name="linaro" fetch="http://git.linaro.org" review=""/>
     <remote name="yocto" fetch="http://git.yoctoproject.org/git" review=""/>
+    <remote name="openembedded" fetch="https://git.openembedded.org" review=""/>
     <default remote="cmf" revision="master" sync-j="2"/>
-    <project name="rdk/components/opensource/oe/bitbake" path="openembedded-core/bitbake" revision="rdk/morty"/>
-    <project name="rdk/components/opensource/oe/meta-browser" path="meta-browser" revision="rdk/morty"/>
-    <project name="rdk/components/opensource/oe/meta-java" path="meta-java" revision="rdk/morty"/>
-    <project name="rdk/components/opensource/oe/meta-jz-mips" path="meta-jz-mips" revision="rdk/morty"/>
-    <project name="rdk/components/opensource/oe/meta-openembedded" path="meta-openembedded" revision="rdk/morty"/>
-    <project name="rdk/components/opensource/oe/meta-qt5" path="meta-qt5" revision="rdk/morty"/>
-    <project name="rdk/components/opensource/oe/meta-raspberrypi" path="meta-raspberrypi" revision="rdk/morty"/>
-    <project name="rdk/components/opensource/oe/meta-rtlwifi" path="meta-rtlwifi" revision="rdk/morty"/>
-    <project name="rdk/components/opensource/oe/meta-virtualization" path="meta-virtualization" revision="rdk/morty"/>
-    <project name="rdk/components/opensource/oe/openembedded-core" path="openembedded-core" revision="rdk/morty"/>
-    <project name="WebPlatformForEmbedded/meta-wpe" remote="github" path="meta-wpe" revision="morty" upstream="morty"/>
+    <include name="oe-layers.xml"/>
     <project name="components/asp/rdk-oe/meta-cmf-bsp-emulator" path="meta-cmf-bsp-emulator" revision="rdk-next"/>
     <project name="components/asp/rdk-oe/meta-rdk-bsp-emulator" path="meta-rdk-bsp-emulator" revision="rdk-next"/>
     <project name="components/generic/rdk-oe/meta-cmf" path="meta-cmf" revision="rdk-next"/>
-    <project name="components/generic/rdk-oe/meta-cmf-camera" path="meta-cmf-camera" revision="rdk-next"/>
-    <project name="components/generic/rdk-oe/meta-cmf-qt5" path="meta-cmf-qt5" revision="rdk-next"/>
+    <project name="components/generic/rdk-oe/meta-cmf-96boards" path="meta-cmf-96boards"/>
+    <project name="components/generic/rdk-oe/meta-cmf-broadband" path="meta-cmf-broadband" revision="rdk-next"/>
+    <project name="components/generic/rdk-oe/meta-cmf-ci20" path="meta-cmf-ci20"/>
+    <project name="components/generic/rdk-oe/meta-cmf-mesh" path="meta-cmf-mesh" revision="rdk-next"/>
     <project name="components/generic/rdk-oe/meta-cmf-raspberrypi" path="meta-cmf-raspberrypi" revision="rdk-next"/>
-    <project name="components/generic/rdk-oe/meta-cmf-video" path="meta-cmf-video" revision="rdk-next"/>
+    <project name="components/generic/rdk-oe/meta-cmf-raspberrypi-restricted" path="meta-cmf-raspberrypi-restricted" revision="rdk-next"/>
     <project name="components/generic/rdk-oe/meta-rdk" path="meta-rdk" revision="rdk-next"/>
-    <project name="components/generic/rdk-oe/meta-rdk-camera" path="meta-rdk-camera" revision="rdk-next"/>
+    <project name="components/generic/rdk-oe/meta-rdk-broadband" path="meta-rdk-broadband" revision="rdk-next"/>
+    <project name="components/generic/rdk-oe/meta-rdk-containers" path="meta-rdk-containers" revision="rdk-next"/>
     <project name="components/generic/rdk-oe/meta-rdk-ext" path="meta-rdk-ext" revision="rdk-next"/>
-    <project name="components/generic/rdk-oe/meta-rdk-video" path="meta-rdk-video" revision="rdk-next"/>
+    <project name="components/opensource/gdbus-client"/>
+    <project name="components/opensource/rbus" revision="rdk-next"/>
+    <project name="components/opensource/rbuscore" revision="rdk-next"/>
+    <project name="rdk/components/generic/breakpad_wrapper" revision="rdk-next"/>
     <project name="rdk/components/generic/crashupload" revision="rdk-next"/>
-    <project name="rdk/components/generic/iarmbus" revision="rdk-next"/>
+    <project name="rdk/components/generic/dca" revision="rdk-next"/>
+    <project name="rdk/components/generic/dcm" revision="rdk-next"/>
+    <project name="rdk/components/generic/jst" revision="rdk-next"/>
     <project name="rdk/components/generic/libSyscallWrapper" revision="rdk-next"/>
+    <project name="rdk/components/generic/libunpriv" revision="rdk-next"/>
+    <project name="rdk/components/generic/lxc-container-generator"/>
+    <project name="rdk/components/generic/lxccpid"/>
     <project name="rdk/components/generic/rdk_logger" revision="rdk-next"/>
-    <project name="rdk/components/generic/sys_mon_tools/rdklogctrl" revision="rdk-next"/>
-    <project name="rdk/components/generic/sysint" revision="rdk-next"/>
+    <project name="rdk/components/generic/rdm" revision="rdk-next"/>
+    <project name="rdk/components/generic/rfc" revision="rdk-next"/>
+    <project name="rdk/components/generic/sys_mon_tools/mem_analyser_tools" revision="rdk-next"/>
+    <project name="rdk/components/generic/sys_mon_tools/sys_resource" revision="rdk-next"/>
     <project name="rdk/components/generic/syslog_helper" revision="rdk-next"/>
-    <project name="rdk/devices/intel-x86-pc/emulator/sysint" path="rdk/components/generic/sysint/device" revision="rdk-next"/>
-    <project name="rdk/devices/raspberrypi/sysint" path="rdk/components/generic/sysint/devicerpi" revision="rdk-next"/>
-    <project name="rdkc/components/opensource/configMgr" revision="rdk-next"/>
-    <project name="rdkc/components/opensource/cvr" revision="rdk-next"/>
-    <project name="rdkc/components/opensource/httpClients" revision="rdk-next"/>
-    <project name="rdkc/components/opensource/ledmgr" revision="rdk-next"/>
-    <project name="rdkc/components/opensource/plugins" revision="rdk-next"/>
-    <project name="rdkc/components/opensource/rms" revision="rdk-next"/>
-    <project name="rdkc/components/opensource/rtmessage" revision="rdk-next"/>
-    <project name="rdkc/components/opensource/thumbnail" revision="rdk-next"/>
-    <project name="rdkc/devices/raspberrypi/mediastreamer" revision="rdk-next"/>
-    <project name="rdkc/devices/raspberrypi/tdkc" path="rdkc/tools/tdkc/platform/raspberrypi" revision="rdk-next"/>
-    <project name="rdkc/tools/tdkc" revision="rdk-next"/>
+    <project name="rdk/components/generic/telemetry" revision="rdk-next"/>
+    <project name="rdk/components/generic/xconf-simulator" revision="rdk-next"/>
+    <project name="rdk/components/generic/xupnp" revision="rdk-next"/>
+    <project name="rdk/components/opensource/rtmessage" revision="rdk-next"/>
+    <project name="rdk/devices/intel-x86-pc/rdkemulator/tdk" path="rdk/tools/tdk/platform/emulator" revision="rdk-next"/>
+    <project name="rdk/devices/raspberrypi/webpa-client" revision="rdk-next"/>
+    <project name="rdk/tools/tdk" revision="rdk-next"/>
+    <project name="rdkb/components/generic/CcspLogAgent" revision="rdk-next"/>
+    <project name="rdkb/components/generic/harvester" revision="rdk-next"/>
+    <project name="rdkb/components/generic/mtu_modifier" revision="rdk-next"/>
+    <project name="rdkb/components/generic/notify_comp" revision="rdk-next"/>
+    <project name="rdkb/components/generic/servicemanager" revision="rdk-next"/>
+    <project name="rdkb/components/generic/sso" revision="rdk-next"/>
+    <project name="rdkb/components/generic/startParodus" revision="rdk-next"/>
+    <project name="rdkb/components/opensource/ccsp/CcspCMAgent" revision="rdk-next"/>
+    <project name="rdkb/components/opensource/ccsp/CcspCommonLibrary" revision="rdk-next"/>
+    <project name="rdkb/components/opensource/ccsp/CcspCr" revision="rdk-next"/>
+    <project name="rdkb/components/opensource/ccsp/CcspDmCli" revision="rdk-next"/>
+    <project name="rdkb/components/opensource/ccsp/CcspEPONAgent" revision="rdk-next"/>
+    <project name="rdkb/components/opensource/ccsp/CcspEthAgent" revision="rdk-next"/>
+    <project name="rdkb/components/opensource/ccsp/CcspHomeSecurity" revision="rdk-next"/>
+    <project name="rdkb/components/opensource/ccsp/CcspLMLite" revision="rdk-next"/>
+    <project name="rdkb/components/opensource/ccsp/CcspMisc" revision="rdk-next"/>
+    <project name="rdkb/components/opensource/ccsp/CcspMoCA" revision="rdk-next"/>
+    <project name="rdkb/components/opensource/ccsp/CcspMtaAgent" revision="rdk-next"/>
+    <project name="rdkb/components/opensource/ccsp/CcspPandM" revision="rdk-next"/>
+    <project name="rdkb/components/opensource/ccsp/CcspPsm" revision="rdk-next"/>
+    <project name="rdkb/components/opensource/ccsp/CcspSnmpPa" revision="rdk-next"/>
+    <project name="rdkb/components/opensource/ccsp/CcspTr069Pa" revision="rdk-next"/>
+    <project name="rdkb/components/opensource/ccsp/CcspWifiAgent" revision="rdk-next"/>
+    <project name="rdkb/components/opensource/ccsp/CcspXDNS" revision="rdk-next"/>
+    <project name="rdkb/components/opensource/ccsp/FirmwareSanity" revision="rdk-next"/>
+    <project name="rdkb/components/opensource/ccsp/GwProvApp" revision="rdk-next"/>
+    <project name="rdkb/components/opensource/ccsp/GwProvApp-EthWan" revision="rdk-next"/>
+    <project name="rdkb/components/opensource/ccsp/GwProvApp-ePON" revision="rdk-next"/>
+    <project name="rdkb/components/opensource/ccsp/MeshAgent" revision="rdk-next"/>
+    <project name="rdkb/components/opensource/ccsp/PowerManager" revision="rdk-next"/>
+    <project name="rdkb/components/opensource/ccsp/TestAndDiagnostic" revision="rdk-next"/>
+    <project name="rdkb/components/opensource/ccsp/Utopia" revision="rdk-next"/>
+    <project name="rdkb/components/opensource/ccsp/Xconf" revision="rdk-next"/>
+    <project name="rdkb/components/opensource/ccsp/hal" revision="rdk-next"/>
+    <project name="rdkb/components/opensource/ccsp/halinterface" revision="rdk-next"/>
+    <project name="rdkb/components/opensource/ccsp/hotspot" revision="rdk-next"/>
+    <project name="rdkb/components/opensource/ccsp/sysint" revision="rdk-next"/>
+    <project name="rdkb/components/opensource/ccsp/webui" revision="rdk-next"/>
+    <project name="rdkb/components/opensource/ccsp/webui-bwg" revision="rdk-next"/>
+    <project name="rdkb/devices/ci20/hal"/>
+    <project name="rdkb/devices/emulator/hal" revision="rdk-next"/>
+    <project name="rdkb/devices/intel-x86-pc/emulator/sysint" path="rdkb/components/opensource/ccsp/sysint/device" revision="rdk-next"/>
+    <project name="rdkb/devices/intel-x86-pc/emulator/tdkb" path="rdkb/tools/tdkb/platform/rdkbemulator" revision="rdk-next"/>
+    <project name="rdkb/devices/raspberrypi/hal" revision="rdk-next"/>
+    <project name="rdkb/devices/raspberrypi/sysint" path="rdkb/components/opensource/ccsp/sysint/devicerpi" revision="rdk-next"/>
+    <project name="rdkb/devices/raspberrypi/tdkb" path="rdkb/tools/tdkb/platform/raspberrypi" revision="rdk-next"/>
+    <project name="rdkb/devices/rdkbemu/ccsp/rdkb" path="rdkb/components/generic/CcspLogAgent/devices" revision="rdk-next"/>
+    <project name="rdkb/devices/rdkbemu/ccsp/rdkb" path="rdkb/components/generic/harvester/devices" revision="rdk-next"/>
+    <project name="rdkb/devices/rdkbemu/ccsp/rdkb" path="rdkb/components/opensource/ccsp/CcspCr/devices" revision="rdk-next"/>
+    <project name="rdkb/devices/rdkbemu/ccsp/rdkb" path="rdkb/components/opensource/ccsp/CcspLMLite/devices" revision="rdk-next"/>
+    <project name="rdkb/devices/rdkbemu/ccsp/rdkb" path="rdkb/components/opensource/ccsp/CcspPandM/devices" revision="rdk-next"/>
+    <project name="rdkb/devices/rdkbemu/ccsp/rdkb" path="rdkb/components/opensource/ccsp/CcspPsm/devices" revision="rdk-next"/>
+    <project name="rdkb/devices/rdkbemu/ccsp/rdkb" path="rdkb/components/opensource/ccsp/CcspSnmpPa/devices" revision="rdk-next"/>
+    <project name="rdkb/devices/rdkbemu/ccsp/rdkb" path="rdkb/components/opensource/ccsp/CcspTr069Pa/devices" revision="rdk-next"/>
+    <project name="rdkb/devices/rdkbemu/ccsp/rdkb" path="rdkb/components/opensource/ccsp/CcspWifiAgent/devices" revision="rdk-next"/>
+    <project name="rdkb/devices/rdkbemu/ccsp/rdkb" path="rdkb/components/opensource/ccsp/TestAndDiagnostic/devices" revision="rdk-next"/>
+    <project name="rdkb/devices/rdkbemu/ccsp/rdkb" path="rdkb/components/opensource/ccsp/Utopia/devices" revision="rdk-next"/>
+    <project name="rdkb/devices/rdkbemu/ccsp/rdkb" path="rdkb/components/opensource/ccsp/hotspot/devices" revision="rdk-next"/>
+    <project name="rdkb/devices/rdkbemu/rdkbemu_xb3" path="rdkb/components/opensource/ccsp/xb3" revision="rdk-next"/>
+    <project name="rdkb/docs"/>
+    <project name="rdkb/tools/tdkb" revision="rdk-next"/>
 </manifest>
