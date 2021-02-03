@@ -6,6 +6,7 @@
     <project name="rdk/components/opensource/oe/meta-java" path="meta-java" revision="rdk/morty"/>
     <project name="rdk/components/opensource/oe/meta-jz-mips" path="meta-jz-mips" revision="rdk/morty"/>
     <project name="rdk/components/opensource/oe/meta-openembedded" path="meta-openembedded" revision="rdk/morty"/>
+    <project name="rdk/components/opensource/oe/meta-python2" path="meta-python2" revision="rdk/morty"/>
     <project name="rdk/components/opensource/oe/meta-qt5" path="meta-qt5" revision="rdk/morty"/>
     <project name="rdk/components/opensource/oe/meta-raspberrypi" path="meta-raspberrypi" revision="rdk/morty"/>
     <project name="rdk/components/opensource/oe/meta-rtlwifi" path="meta-rtlwifi" revision="rdk/morty"/>
