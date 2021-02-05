@@ -16,10 +16,8 @@
     <project name="components/generic/rdk-oe/meta-cmf-ci20" path="meta-cmf-ci20"/>
     <project name="components/generic/rdk-oe/meta-cmf-mesh" path="meta-cmf-mesh" revision="rdk-next"/>
     <project name="components/generic/rdk-oe/meta-cmf-raspberrypi" path="meta-cmf-raspberrypi" revision="rdk-next"/>
-    <project name="components/generic/rdk-oe/meta-cmf-raspberrypi-restricted" path="meta-cmf-raspberrypi-restricted" revision="rdk-next"/>
     <project name="components/generic/rdk-oe/meta-rdk" path="meta-rdk" revision="rdk-next"/>
     <project name="components/generic/rdk-oe/meta-rdk-broadband" path="meta-rdk-broadband" revision="rdk-next"/>
-    <project name="components/generic/rdk-oe/meta-rdk-containers" path="meta-rdk-containers" revision="rdk-next"/>
     <project name="components/generic/rdk-oe/meta-rdk-ext" path="meta-rdk-ext" revision="rdk-next"/>
     <project name="components/opensource/gdbus-client"/>
     <project name="components/opensource/rbus" revision="rdk-next"/>
