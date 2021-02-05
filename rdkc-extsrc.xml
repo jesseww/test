@@ -8,12 +8,8 @@
     <remote name="openembedded" fetch="https://git.openembedded.org" review=""/>
     <default remote="cmf" revision="master" sync-j="2"/>
     <include name="oe-layers.xml"/>
-    <project name="components/asp/rdk-oe/meta-cmf-bsp-emulator" path="meta-cmf-bsp-emulator" revision="rdk-next"/>
-    <project name="components/asp/rdk-oe/meta-rdk-bsp-emulator" path="meta-rdk-bsp-emulator" revision="rdk-next"/>
     <project name="components/generic/rdk-oe/meta-cmf" path="meta-cmf" revision="rdk-next"/>
-    <project name="components/generic/rdk-oe/meta-cmf-96boards" path="meta-cmf-96boards"/>
     <project name="components/generic/rdk-oe/meta-cmf-broadband" path="meta-cmf-broadband" revision="rdk-next"/>
-    <project name="components/generic/rdk-oe/meta-cmf-ci20" path="meta-cmf-ci20"/>
     <project name="components/generic/rdk-oe/meta-cmf-mesh" path="meta-cmf-mesh" revision="rdk-next"/>
     <project name="components/generic/rdk-oe/meta-cmf-raspberrypi" path="meta-cmf-raspberrypi" revision="rdk-next"/>
     <project name="components/generic/rdk-oe/meta-rdk" path="meta-rdk" revision="rdk-next"/>
